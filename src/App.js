@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import AddTodoForm from "./AddTodoForm";
 import TodoList from "./TodoList";
 import "./App.css";
-import ajax from "ajax";
 
 function App() {
     const [todoList, setTodoList] = useState([]);
