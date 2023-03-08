@@ -4,13 +4,13 @@ import TodoListItem from "./TodoListItem";
 export default function TodoList({ onRemoveTodo, todoList }) {
     return (
         <ul>
-            {todoList.map((item) => {
+            {todoList.map((todo) => {
                 return (
                     <TodoListItem
                         onRemoveTodo={onRemoveTodo}
-                        key={item.id}
-                        title={item.title}
-                        id={item.id}
+                        key={todo.id}
+                        title={todo.fields.Title}
+                        id={todo.id}
                     />
                 );
             })}
