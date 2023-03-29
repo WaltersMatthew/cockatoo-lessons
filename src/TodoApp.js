@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import AddTodoForm from "./AddTodoForm";
 import TodoList from "./TodoList";
+import styles from "./TodoListItem.module.css";
 import "./App.css";
 
 function TodoApp(props) {
@@ -46,15 +46,23 @@ function TodoApp(props) {
 
     return (
         <>
-            <h1>To Do List</h1>
-            <Link to={"/new"}>Go here!</Link>
-            <br />
-            <Link to={"/feed"}>See the news feed!</Link>
-            <AddTodoForm onAddTodo={addTodo} />
             {isLoading ? (
-                <p>Loading...</p>
+                <div className={styles.loaderContainer}>
+                    <div className="spinner"></div>
+                </div>
             ) : (
-                <TodoList onRemoveTodo={removeTodo} todoList={todoList} />
+                <div className={styles.app}>
+                    <div className={styles.input}>
+                        <h1>To Do List</h1>
+                        <AddTodoForm onAddTodo={addTodo} />
+                    </div>
+                    <div className={styles.list}>
+                        <TodoList
+                            onRemoveTodo={removeTodo}
+                            todoList={todoList}
+                        />
+                    </div>
+                </div>
             )}
         </>
     );

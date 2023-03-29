@@ -1,0 +1,80 @@
+.listItem {
+    color: green;
+    list-style-type: none;
+    margin: 10px 0;
+}
+.app {
+    text-align: center;
+    margin: 20px;
+    border: 5px solid black;
+    max-width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+    font-family: "Delicious Handrawn", cursive;
+}
+
+.input {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+.input input {
+    font-size: 1.5rem;
+}
+.input button {
+    background-color: red;
+    font-size: 1.5rem;
+}
+.list {
+    font-size: 2rem;
+    background-color: #555;
+    text-align: center;
+    padding: 10px;
+}
+.remove {
+    margin-left: 20px;
+    background-color: green;
+    font-size: 2rem;
+    float: right;
+}
+
+.loaderContainer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.834)
+        url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif") center
+        no-repeat;
+    z-index: 1;
+}
+
+@media screen and (max-width: 450px) {
+    .listItem {
+        margin: 0;
+    }
+    .app {
+        margin: 0;
+        display: block;
+        max-width: 100vw;
+    }
+    .input {
+        font-size: 1rem;
+    }
+    .input input {
+        font-size: 20px;
+    }
+    .list {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .list li {
+        text-align: right;
+        margin: 10px 0;
+    }
+    .remove {
+        float: none;
+        font-size: 1.5rem;
+    }
+}

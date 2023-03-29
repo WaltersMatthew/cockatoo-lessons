@@ -7,7 +7,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/home" element={<TodoApp />} exact></Route>
+                <Route path="/" element={<TodoApp />} exact></Route>
                 <Route
                     path="/new"
                     element={<Link to={"/"}>back home</Link>}

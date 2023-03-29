@@ -1,36 +1,10 @@
-.App {
-    text-align: center;
-}
-.links {
-    font-size: 50px;
-}
-body {
-    background-color: #666;
-    padding: 50px;
-}
-form button {
-    background-color: yellow;
-    border: 3px solid blue;
-    border-radius: 5px;
-}
-input {
-    border-radius: 5px;
-    background-color: lightgray;
-    margin: 0 5px 0 5px;
-}
-li {
-    margin-bottom: 10px;
-}
-li button {
-    margin-left: 5px;
-    border-radius: 5px;
-    background-color: red;
-}
 .App-logo {
     height: 40vmin;
     pointer-events: none;
 }
-
+body {
+    background-color: #888;
+}
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
