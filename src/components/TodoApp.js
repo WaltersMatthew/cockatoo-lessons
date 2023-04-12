@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import AddTodoForm from "./AddTodoForm";
 import TodoList from "./TodoList";
-import styles from "./TodoListItem.module.css";
-import "./App.css";
+import styles from "../css/TodoListItem.module.css";
+import "../css/App.css";
 
-function TodoApp(props) {
+function TodoApp() {
     const url = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE_ID}/Default`;
 
     const [todoList, setTodoList] = useState([]);

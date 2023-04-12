@@ -1,5 +1,6 @@
 import React from "react";
 import TodoListItem from "./TodoListItem";
+import PropTypes from "prop-types";
 
 export default function TodoList({ onRemoveTodo, todoList }) {
     return (
@@ -17,3 +18,8 @@ export default function TodoList({ onRemoveTodo, todoList }) {
         </ul>
     );
 }
+
+TodoList.propTypes = {
+    onRemoveTodo: PropTypes.func,
+    todoList: PropTypes.array,
+};

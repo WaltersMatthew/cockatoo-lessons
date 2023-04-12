@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import React from "react";
-import TodoApp from "./TodoApp";
+import TodoApp from "./components/TodoApp";
 import NewsFeed from "./NewsFeed";
 
 function App() {
