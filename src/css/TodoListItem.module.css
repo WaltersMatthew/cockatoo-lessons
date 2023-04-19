@@ -1,7 +1,9 @@
 .listItem {
     color: green;
     list-style-type: none;
-    margin: 10px 0;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .app {
     text-align: center;
@@ -30,13 +32,11 @@
     font-size: 2rem;
     background-color: #555;
     text-align: center;
-    padding: 10px;
 }
 .remove {
     margin-left: 20px;
     background-color: green;
     font-size: 2rem;
-    float: right;
 }
 
 .loaderContainer {

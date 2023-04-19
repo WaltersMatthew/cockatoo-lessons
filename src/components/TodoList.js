@@ -10,6 +10,7 @@ export default function TodoList({ onRemoveTodo, todoList }) {
                     <TodoListItem
                         onRemoveTodo={onRemoveTodo}
                         key={todo.id}
+                        createdTime={todo.createdTime}
                         title={todo.fields.Title}
                         id={todo.id}
                     />
